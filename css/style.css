@@ -14,6 +14,15 @@ footer {
   margin-top: auto;
 }
 
+header .logo {
+  width: 75px;
+  transition: transform 0.8s ease-in-out;
+}
+
+header .logo:hover {
+  transform: rotate(360deg);
+}
+
 .form-search .input-search::placeholder {
   color: #ffffffa2;
 }
