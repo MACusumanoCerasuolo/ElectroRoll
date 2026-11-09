@@ -16,7 +16,7 @@ h2:hover{
 }
 
 
-/* CARRUSEL DE PRODUCTOS */
+
 
 .carrusel-productos {
   position: relative;
@@ -24,34 +24,35 @@ h2:hover{
   padding: 50px 45px;
 }
 
-/* Ventana que muestra los productos */
+
 .productos-ventana {
   overflow: hidden;
 }
 
-/* Lista horizontal */
+
 .productos-lista {
   display: flex;
   width: 100%;
   transition: transform 0.5s ease;
 }
 
-/* Tarjetas de productos */
+
 .producto {
   flex: 0 0 33.3333%;
   padding: 15px;
   text-align: center;
   box-sizing: border-box;
+   position: relative;
 }
 
-/* Imágenes */
+
 .producto img {
   width: 100%;
   height: 220px;
   object-fit: contain;
 }
 
-/* Flechas */
+
 .flecha {
   position: absolute;
   top: 50%;
@@ -65,22 +66,21 @@ h2:hover{
   border-radius: 5px;
 }
 
-/* Flecha izquierda */
 .anterior {
   left: 0;
 }
 
-/* Flecha derecha */
+
 .siguiente {
   right: 0;
 }
 
-/* Efecto al pasar el mouse */
+
 .flecha:hover {
   background: #555;
 }
 
-/* Carrusel adaptable a celulares */
+
 @media (max-width: 768px) {
   .producto {
     flex: 0 0 50%;
@@ -91,4 +91,24 @@ h2:hover{
   .producto {
     flex: 0 0 100%;
   }
+}
+
+.precio{
+    background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 15px;
+  text-align: center;
+
+}
+ .precio:hover{
+  transition: 0.1s;
+  font-weight: bold;
+  font-size: 20px;
 }
