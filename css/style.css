@@ -79,3 +79,7 @@ footer .copy-footer {
     width: 380px;
   }
 }
+
+.p-first-section-about-us {
+  max-width: 600px;
+}
