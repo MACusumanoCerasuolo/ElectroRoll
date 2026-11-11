@@ -1,13 +1,18 @@
-h1{
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+h1 {
+    display: table;
+    margin: 50px auto;
+    padding: 15px 30px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px 8px gray;
 }
 
 h2{
     margin : 30px;
     margin-top: 50px;
-    padding: 50px;
+    padding: 20px;
 }
 h2:hover{
     transition: 1s;
@@ -22,13 +27,13 @@ h2:hover{
   position: relative;
   width: 100%;
   padding: 50px 45px;
-}
 
+}
 
 .productos-ventana {
+  width: 100%;
   overflow: hidden;
 }
-
 
 .productos-lista {
   display: flex;
@@ -36,22 +41,21 @@ h2:hover{
   transition: transform 0.5s ease;
 }
 
-
 .producto {
   flex: 0 0 33.3333%;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
   box-sizing: border-box;
-   position: relative;
-}
+  position: relative;
 
+}
 
 .producto img {
   width: 100%;
   height: 220px;
   object-fit: contain;
+  margin-bottom: 20px;
 }
-
 
 .flecha {
   position: absolute;
@@ -62,28 +66,39 @@ h2:hover{
   color: white;
   padding: 12px;
   cursor: pointer;
-  z-index: 2;
   border-radius: 5px;
 }
 
-.anterior {
-  left: 0;
-}
 
 
 .siguiente {
   right: 0;
 }
 
-
 .flecha:hover {
   background: #555;
 }
 
+.precio {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.precio:hover {
+  font-size: 20px;
+}
 
 @media (max-width: 768px) {
   .producto {
     flex: 0 0 50%;
+  }
+  .producto h5 {
+    margin: 50px;
   }
 }
 
@@ -91,24 +106,7 @@ h2:hover{
   .producto {
     flex: 0 0 100%;
   }
-}
-
-.precio{
-    background-color: black;
-  color: white;
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  right: 0;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 15px;
-  text-align: center;
-
-}
- .precio:hover{
-  transition: 0.1s;
-  font-weight: bold;
-  font-size: 20px;
+  .producto h5 {
+    margin: 25px;
+  }
 }
