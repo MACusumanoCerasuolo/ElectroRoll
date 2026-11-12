@@ -1,33 +1,29 @@
 h1 {
-    display: table;
-    margin: 50px auto;
-    padding: 15px 30px;
-    font-weight: bold;
-    background-color: black;
-    color: white;
-    text-align: center;
-    box-shadow: 3px 3px 8px gray;
+  display: table;
+  margin: 50px auto;
+  padding: 15px 30px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  text-align: center;
+  box-shadow: 3px 3px 8px gray;
 }
 
-h2{
-    margin : 30px;
-    margin-top: 50px;
-    padding: 20px;
+h2 {
+  margin: 30px;
+  margin-top: 50px;
+  padding: 20px;
 }
-h2:hover{
-    transition: 1s;
-    font-size: 40px;
-    font-weight: bold;
+h2:hover {
+  transition: 1s;
+  font-size: 40px;
+  font-weight: bold;
 }
-
-
-
 
 .carrusel-productos {
   position: relative;
   width: 100%;
   padding: 50px 45px;
-
 }
 
 .productos-ventana {
@@ -47,7 +43,6 @@ h2:hover{
   text-align: center;
   box-sizing: border-box;
   position: relative;
-
 }
 
 .producto img {
@@ -68,8 +63,6 @@ h2:hover{
   cursor: pointer;
   border-radius: 5px;
 }
-
-
 
 .siguiente {
   right: 0;
@@ -92,6 +85,23 @@ h2:hover{
 .precio:hover {
   font-size: 20px;
 }
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+.logo-footer {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+.logo:hover {
+  transform: rotate(360deg);
+}
+
 
 @media (max-width: 768px) {
   .producto {
