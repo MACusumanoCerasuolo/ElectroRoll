@@ -83,3 +83,9 @@ footer .copy-footer {
 .p-first-section-about-us {
   max-width: 600px;
 }
+
+.img-avatar {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+}
