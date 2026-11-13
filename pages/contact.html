@@ -177,6 +177,9 @@
                     class="form-control"
                     id="contact-name"
                     placeholder="Agustin"
+                    minlength="2"
+                    maxlength="45"
+                    required
                   />
                   <label for="contact-name">Nombre</label>
                 </div>
@@ -188,6 +191,9 @@
                     class="form-control"
                     id="contat-lastname"
                     placeholder="Ramirez"
+                    minlength="2"
+                    maxlength="45"
+                    required
                   />
                   <label for="contat-lastname">Apellido</label>
                 </div>
@@ -199,6 +205,9 @@
                     class="form-control"
                     id="contact-email"
                     placeholder="nombre@correo.com"
+                    minlength="10"
+                    maxlength="60"
+                    required
                   />
                   <label for="contact-email">Correo electrónico</label>
                 </div>
@@ -209,6 +218,9 @@
                     class="form-control"
                     placeholder="Deja tu consulta o duda aquí..."
                     id="contact-consult"
+                    minlength="10"
+                    maxlength="200"
+                    required
                   ></textarea>
                   <label for="contact-consult">Consultas o dudas</label>
                 </div>
@@ -220,6 +232,7 @@
                     type="checkbox"
                     value=""
                     id="contact-privacy"
+                    required
                   />
                   <label class="form-check-label" for="contact-privacy">
                     Acepto las
@@ -233,7 +246,9 @@
                 </div>
               </div>
               <div class="col-12 mb-3 d-grid">
-                <button class="btn btn-dark" type="submit">Enviar consulta</button>
+                <button class="btn btn-dark" type="submit">
+                  Enviar consulta
+                </button>
               </div>
               <hr />
               <div class="d-grid col-12 col-md-6 mx-auto">
