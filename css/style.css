@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -12,4 +12,85 @@ body{
 
 footer {
   margin-top: auto;
+}
+
+header .logo {
+  width: 75px;
+  transition: transform 0.8s ease-in-out;
+}
+
+header .logo:hover {
+  transform: rotate(360deg);
+}
+
+.form-search .input-search::placeholder {
+  color: #ffffffa2;
+}
+
+header .icon-search {
+  width: 20px;
+  height: 20px;
+}
+
+header .icon-cart,
+header .icon-person {
+  width: 25px;
+  height: 25px;
+}
+
+footer .logo-footer {
+  width: 120px;
+  filter: grayscale(100%) opacity(25%);
+  transition: transform 0.8s ease-in-out;
+}
+
+footer .logo-footer:hover {
+  transform: rotate(360deg);
+}
+
+footer .icon-instagram,
+footer .icon-tiktok,
+footer .icon-facebook {
+  width: 22px;
+  height: 22px;
+}
+
+footer .more-info {
+  color: #ffffffa3;
+}
+
+footer .more-info:hover,
+footer .more-info:focus {
+  color: #fff;
+}
+
+footer .copy-footer {
+  color: #ffffffa3;
+}
+
+.login-modal .login-forgot-password,
+.login-modal .text-singup-login {
+  color: #797979;
+  text-decoration: none;
+}
+.login-modal .login-forgot-password:hover,
+.login-modal .text-singup-login:hover {
+  color: #000;
+}
+.login-modal .icon-login-google,
+.login-modal .icon-login-facebook {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 992px) {
+  .form-search .input-search {
+    width: 210px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-search .input-search {
+    width: 380px;
+  }
 }
