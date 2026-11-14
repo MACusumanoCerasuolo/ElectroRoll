@@ -6,7 +6,7 @@
     <meta name="description" content="Página principal de ElectroRoll" />
     <meta
       name="author"
-      content="Mauro Cusumano, Mauro Romo, Eliseo Perez, Ismael Perez, Belen Pomo"
+      content="Mauro Cusumano, Mauro Romo, Eliseo Perez, Ismael Perez, Belen Pomo, Julieta Mazzuco"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -155,7 +155,226 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section id="promotion">
+        <div id="promotion-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#promotion-carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Promo 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#promotion-carouse2"
+              data-bs-slide-to="1"
+              aria-label="Promo 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#promotion-carouse3"
+              data-bs-slide-to="2"
+              aria-label="Promo 3"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/promocelular.png"
+                class="d-block w-100"
+                alt="promo-celular"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/promosmarttv.png"
+                class="d-block w-100"
+                alt="promo-smart-tv"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/promoelectronicos.png"
+                class="d-block w-100"
+                alt="promo-electronicos"
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#promoCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#promoCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="category" class="container my-5">
+        <h2 class="text-center mb-4">Nuestras categorías</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 text-center">
+              <img
+                src="./img/celulares.png"
+                class="card-img-top"
+                alt="celulares"
+              />
+              <div class="card-body">
+                <h3 class="card-title h5">Celulares</h3>
+                <p class="card-text">Smartphones de todas las gamas.</p>
+                <a href="pages/celulares.html" class="btn btn-primary"
+                  >Ver categoría</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 text-center">
+              <img
+                src="./img/smart-tv.png"
+                class="card-img-top"
+                alt="smart-tv"
+              />
+              <div class="card-body">
+                <h3 class="card-title h5">Televisores</h3>
+                <p class="card-text">Smart TV, LED y 4K.</p>
+                <a href="pages/televisores.html" class="btn btn-primary"
+                  >Ver categoría</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+            <div class="card h-100 text-center">
+              <img
+                src="./img/electronicos.png"
+                class="card-img-top"
+                alt="electrónicos"
+              />
+              <div class="card-body">
+                <h3 class="card-title h5">Electrónicos</h3>
+                <p class="card-text">Accesorios y electrónica en general.</p>
+                <a href="pages/electronicos.html" class="btn btn-primary"
+                  >Ver categoría</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="publicity-1" class="container my-4">
+        <a href="#">
+          <img
+            src="./img/publicidadofertas.png"
+            class="img-fluid w-100"
+            alt="publicidad-ofertas"
+          />
+        </a>
+      </section>
+
+      <section id="highlights" class="container my-5">
+        <h2 class="text-center mb-4">Productos en promoción</h2>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <img
+                src="./img/productocelular.png"
+                class="card-img-top"
+                alt="producto-celular"
+              />
+              <div class="card-body">
+                <h3 class="card-title h5">Celulares</h3>
+                <p class="card-text">Todos los modelos en promoción.</p>
+                <a href="pages/detalle-producto.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <img
+                src="./img/productosmarttv.png"
+                class="card-img-top"
+                alt="producto-smart-tv"
+              />
+              <div class="card-body">
+                <h3 class="card-title h5">Smart TV</h3>
+                <p class="card-text">Todos los modelos en promoción.</p>
+                <a href="pages/detalle-producto.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <img
+                src="./img/productoauricular.png"
+                class="card-img-top"
+                alt="producto-auricular"
+              />
+              <div class="card-body">
+                <h3 class="card-title h5">Auriculares</h3>
+                <p class="card-text">Todos los modelos en promoción.</p>
+                <a href="pages/detalle-producto.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <img
+                src="./img/productosmartwacht.png"
+                class="card-img-top"
+                alt="producto-smartwatch"
+              />
+              <div class="card-body">
+                <h3 class="card-title h5">Smartwatch</h3>
+                <p class="card-text">Todos los modelos en promoción.</p>
+                <a href="pages/detalle-producto.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="publicity-2" class="container my-4 d-md-block">
+        <a href="#">
+          <img
+            src="./img/publicidadenviogratis.png"
+            class="img-fluid w-100"
+            alt="publicidad-envio-gratis"
+          />
+        </a>
+      </section>
+    </main>
     <footer class="bg-black">
       <div class="container my-4">
         <div class="row">
