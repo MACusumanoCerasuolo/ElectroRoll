@@ -4,3 +4,63 @@
   object-fit: contain;
 }
 
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-size: 60%;
+  padding: 10px;
+}
+
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #000;
+}
+
+.caracteristicas ul {
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+  margin-left: 50px;
+  font-size: 20px;
+  color: black;
+  line-height: 1.8;
+}
+
+.precios{
+  font-size: 20px;
+  color: black;
+  
+}
+.medios-pago {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 18px;
+  color: black;
+ 
+}
+
+.medios-pago img {
+  width: 35px;
+  height: 23px;
+  object-fit: contain;
+}
+.medios-pago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px auto;
+  flex-wrap: wrap;
+}
+
+.medios-pago img {
+  width: 40px;
+  height: 30px;
+}
