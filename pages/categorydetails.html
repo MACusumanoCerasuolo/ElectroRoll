@@ -495,7 +495,7 @@
 
         const anchoProducto = productos[0].getBoundingClientRect().width;
 
-        // Calcula cuántos productos entran en la pantalla
+      
         const visibles = Math.max(
           1,
           Math.round(ventana.clientWidth / anchoProducto),
@@ -513,5 +513,21 @@
         lista.style.transform = `translateX(-${posicion * anchoProducto}px)`;
       }
     </script>
+    <script>
+  const secciones = document.querySelectorAll("main section");
+
+  function mostrarProducto() {
+    const producto = window.location.hash.substring(1);
+
+    secciones.forEach((seccion) => {
+      seccion.style.display =
+        !producto || seccion.id === producto ? "block" : "none";
+    });
+  }
+
+  mostrarProducto();
+
+  window.addEventListener("hashchange", mostrarProducto);
+</script>
   </body>
 </html>
