@@ -19,6 +19,7 @@
       href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/register.css" />
     <title>ElectroRoll | Registrarse</title>
   </head>
   <body>
@@ -158,11 +159,11 @@
     <main class="container my-5">
       <div class="row justify-content-center">
       <div class="col-md-8 col-lg-6">
-        <div class="card shadow-sm" style="max-width: 500px; margin:auto;">
+        <div class="card shadow-sm">
            <div class="card-body p-4">
               <h4 class="card-title">REGISTRARSE</h4>
               <p class="card-subtitle text-muted small mb-4">Regístrate para crear tu cuenta</p>
-                <form>
+                <form action="/pages/error404.html" method="get">
               <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingNombre" placeholder="Ejemplo: Juan Pérez" required>
                 <label for="floatingNombre">Nombre y apellido</label>
@@ -197,7 +198,7 @@
                 <label for="floatingPass">Contraseña</label>
               </div>
 
-              <button type="submit" class="btn btn-dark w-100 py-2 text-uppercase" style="letter-spacing: 1px;">Registrarse</button>
+              <button type="submit" class="btn btn-dark w-100 py-2 text-uppercase">Registrarse</button>
             </form>
 
            </div>
