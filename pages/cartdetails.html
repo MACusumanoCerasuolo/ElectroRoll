@@ -19,6 +19,7 @@
       href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../css/cart-details.css" />
     <title>ElectroRoll | Detalles del Carrito</title>
   </head>
   <body>
@@ -155,7 +156,62 @@
         </div>
       </nav>
     </header>
-    <main></main>
+
+    <main>
+      <section class="py-5">
+        <div class="container px-4">
+          <h1 class="text-center mb-4 h3">Carrito de Compras</h1>
+          <!-- Productos -->
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-2 border-bottom align-items-center pb-3">
+                <div class="col-4">
+                  <img
+                    src="../img/cart-details/samsung-mobile.jpg"
+                    alt="Samsung A16 128GB"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-8">
+                  <p>Celular Samsung A16 6.7´´ 128GB NFC Gris</p>
+                </div>
+                <div class="col-4 text-center">
+                  <span class="small text-body-secondary d-block">Precio</span>
+                  $350000
+                </div>
+                <div class="col-4">
+                  <div class="input-group input-group-sm">
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      aria-label="Disminuir cantidad"
+                    >
+                      -
+                    </button>
+                    <input type="text" type="numeric" class="form-control text-center" />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      aria-label="Aumentar cantidad"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="col-4 text-center">
+                  <span class="small text-body-secondary d-block">Subtotal</span>
+                  $350000
+                </div>
+              </div>
+            </div>
+            <!-- producto 2 -->
+          </div>
+          <!-- Resumen de la compra -->
+          <div class="col-12"></div>
+        </div>
+      </section>
+    </main>
+
     <footer class="bg-black">
       <div class="container my-4">
         <div class="row">
