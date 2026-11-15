@@ -923,22 +923,30 @@
 
     <footer></footer>
 
-    <script>
-      const secciones = document.querySelectorAll("main section");
+   <script>
+  const secciones = document.querySelectorAll("main section");
 
-      function mostrarProducto() {
-        const producto = window.location.hash.substring(1);
+  function mostrarProducto() {
+    const producto = window.location.hash.substring(1);
 
-        secciones.forEach((seccion) => {
-          seccion.style.display =
-            !producto || seccion.id === producto ? "block" : "none";
-        });
+    secciones.forEach((seccion) => {
+      seccion.style.display =
+        !producto || seccion.id === producto ? "block" : "none";
+    });
+
+    if (producto) {
+      const seccionActiva = document.getElementById(producto);
+
+      if (seccionActiva) {
+        seccionActiva.scrollIntoView({ behavior: "smooth" });
       }
+    }
+  }
 
-      mostrarProducto();
+  mostrarProducto();
 
-      window.addEventListener("hashchange", mostrarProducto);
-    </script>
+  window.addEventListener("hashchange", mostrarProducto);
+</script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
