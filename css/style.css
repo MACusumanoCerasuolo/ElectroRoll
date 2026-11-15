@@ -68,6 +68,21 @@ footer .copy-footer {
   color: #ffffffa3;
 }
 
+.login-modal .login-forgot-password,
+.login-modal .text-singup-login {
+  color: #797979;
+  text-decoration: none;
+}
+.login-modal .login-forgot-password:hover,
+.login-modal .text-singup-login:hover {
+  color: #000;
+}
+.login-modal .icon-login-google,
+.login-modal .icon-login-facebook {
+  width: 16px;
+  height: 16px;
+}
+
 @media (min-width: 992px) {
   .form-search .input-search {
     width: 210px;
