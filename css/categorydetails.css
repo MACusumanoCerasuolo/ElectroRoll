@@ -19,3 +19,27 @@ h3{
   object-fit: contain;
   padding: 30px 30px;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > .col {
+  width: 33.3333%;
+  flex: 0 0 33.3333%;
+}
+
+@media (max-width: 991px) {
+  .row > .col {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .row > .col {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
