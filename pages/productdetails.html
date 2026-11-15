@@ -922,25 +922,22 @@
 </main>
 
     <footer></footer>
-
-   <script>
+<script>
   const secciones = document.querySelectorAll("main section");
 
   function mostrarProducto() {
     const producto = window.location.hash.substring(1);
 
+    const existeProducto = Array.from(secciones).some(
+      (seccion) => seccion.id === producto
+    );
+
     secciones.forEach((seccion) => {
       seccion.style.display =
-        !producto || seccion.id === producto ? "block" : "none";
+        !producto || !existeProducto || seccion.id === producto
+          ? "block"
+          : "none";
     });
-
-    if (producto) {
-      const seccionActiva = document.getElementById(producto);
-
-      if (seccionActiva) {
-        seccionActiva.scrollIntoView({ behavior: "smooth" });
-      }
-    }
   }
 
   mostrarProducto();
