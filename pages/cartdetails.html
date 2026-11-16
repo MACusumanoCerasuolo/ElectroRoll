@@ -161,18 +161,17 @@
       <section class="py-5">
         <div class="container px-4">
           <h1 class="text-center mb-4 h3">Carrito de Compras</h1>
-          <div class="row d-none d-md-flex fw-bold g-4 cart-header-text-md border-bottom">
-            <div class="col-md-5">Producto</div>
-            <div class="col-md-2">Precio</div>
-            <div class="col-md-2">Cant.</div>
-            <div class="col-md-2">Subtotal</div>
-            <div class="col-md-1"></div>
-          </div>
-          <!-- Productos -->
-          <div class="row cart-body-text-md mb-4">
-            <div class="col-12">
+          <div class="row mb-4">
+            <div class="col-12 col-lg-8">
+              <div class="row d-none d-md-flex fw-bold g-4 cart-header-text-md border-bottom">
+                <div class="col-md-5">Producto</div>
+                <div class="col-md-2">Precio</div>
+                <div class="col-md-2">Cant.</div>
+                <div class="col-md-2">Subtotal</div>
+                <div class="col-md-1"></div>
+              </div>
               <!-- producto 1 -->
-              <div class="row g-2 border-bottom align-items-center py-3">
+              <div class="row g-2 border-bottom align-items-center py-3 cart-product-text-md">
                 <div class="col-4 col-md-2">
                   <div class="ratio ratio-1x1">
                     <img
@@ -183,11 +182,11 @@
                   </div>
                 </div>
                 <div class="col-8 col-md-3">
-                  <p class="text-body-emphasis">
+                  <p>
                     Celular Samsung A16 6.7´´ 128GB NFC Gris
                   </p>
                 </div>
-                <div class="col-3 col-md-2 text-center text-body-emphasis">
+                <div class="col-3 col-md-2 text-center">
                   <span class="small d-block d-md-none">Precio</span>
                   $350000
                 </div>
@@ -215,7 +214,7 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-4 col-md-2 text-center text-body-emphasis">
+                <div class="col-4 col-md-2 text-center">
                   <span class="small d-block d-md-none">Subtotal</span>
                   $350000
                 </div>
@@ -243,9 +242,7 @@
                 </div>
               </div>
               <!-- producto 2 -->
-              <div
-                class="row g-2 border-bottom align-items-center py-3 text-body-emphasis"
-              >
+              <div class="row g-2 border-bottom align-items-center py-3 cart-product-text-md">
                 <div class="col-4 col-md-2">
                   <div class="ratio ratio-1x1">
                     <img
@@ -262,7 +259,7 @@
                   </p>
                 </div>
                 <div class="col-3 col-md-2 text-center">
-                  <span class="small d-block">Precio</span>
+                  <span class="small d-block d-md-none">Precio</span>
                   $330000
                 </div>
                 <div class="col-5 col-md-2">
@@ -290,7 +287,7 @@
                   </div>
                 </div>
                 <div class="col-4 col-md-2 text-center">
-                  <span class="small d-block">Subtotal</span>
+                  <span class="small d-block d-md-none">Subtotal</span>
                   $66000
                 </div>
                 <div class="col-12 col-md-1 text-center">
@@ -318,7 +315,7 @@
               </div>
               <!-- producto 3 -->
               <div
-                class="row g-2 border-bottom align-items-center py-3 text-body-emphasis"
+                class="row g-2 border-bottom align-items-center py-3 cart-product-text-md"
               >
                 <div class="col-4 col-md-2">
                   <div class="ratio ratio-1x1">
@@ -333,7 +330,7 @@
                   <p>Planchita BabyLissPro 220v placas titanium 5 niveles</p>
                 </div>
                 <div class="col-3 col-md-2 text-center">
-                  <span class="small d-block">Precio</span>
+                  <span class="small d-block d-md-none">Precio</span>
                   $208900
                 </div>
                 <div class="col-5 col-md-2">
@@ -361,7 +358,7 @@
                   </div>
                 </div>
                 <div class="col-4 col-md-2 text-center">
-                  <span class="small d-block">Subtotal</span>
+                  <span class="small d-block d-md-none">Subtotal</span>
                   $208900
                 </div>
                 <div class="col-12 col-md-1 text-center">
@@ -388,28 +385,30 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Resumen de la compra -->
-          <div class="col-12 col-lg-4">
-            <div class="card shadow-sm border-0">
-              <div class="card-body">
-                <div
-                  class="d-flex align-items-center justify-content-between mb-2 mb-md-4"
-                >
-                  <span class="text-body-emphasis fs-2">Total a pagar</span>
-                  <span class="fw-bold cart-price-fs-sm">$624900</span>
-                </div>
-                <div
-                  class="d-grid gap-3 d-md-flex flex-md-row-reverse d-lg-grid"
-                >
-                  <a
-                    href="../pages/error404.html"
-                    class="btn btn-primary flex-fill cart-button-md"
-                    >Finalizar compra</a
+            <!-- Resumen de la compra -->
+            <div class="col-12 col-lg-4">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-2 mb-md-4"
                   >
-                  <a href="../index.html" class="btn btn-outline-dark flex-fill cart-button-md"
-                    >Seguir comprando</a
+                    <span class="text-body-emphasis fs-2">Total a pagar</span>
+                    <span class="fw-bold cart-price-fs-sm">$624900</span>
+                  </div>
+                  <div
+                    class="d-grid gap-3 d-md-flex flex-md-row-reverse d-lg-grid"
                   >
+                    <a
+                      href="../pages/error404.html"
+                      class="btn btn-primary flex-fill cart-button-md"
+                      >Finalizar compra</a
+                    >
+                    <a
+                      href="../index.html"
+                      class="btn btn-outline-dark flex-fill cart-button-md"
+                      >Seguir comprando</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
