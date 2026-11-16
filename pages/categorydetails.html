@@ -15,11 +15,16 @@
       crossorigin="anonymous"
     />
     <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+/>
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="/css/categorydetails.css" />
+    
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/categorydetails.css" />
     <title>ElectroRoll | Detalles de Categoría</title>
   </head>
   <body>
@@ -157,206 +162,248 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Categoria</h1>
-      <h3>Celulares</h3>
-      <div class="row px-3">
-        <div class="col  d-flex">
-          <div class="card w-100">
-            <img
-              src="/img/productos/galaxy1.png"
-              class="card-img-top product-image"
-              alt="Galaxy 017"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Galaxy 017</h5>
-              <p class="card-text mb-3">
-                Memoria RAM: 4 GB, Tiene 3 cámaras traseras de 50Mpx/5Mpx/2Mpx,
-                Memoria interna de 128GB.
-              </p>
-              <p class="fs-3 fw-bold">Precio: $520.000</p>
-              <a href="/pages/productdetails.html" class="btn btn-primary"
-                >Ver producto</a
-              >
-            </div>
-          </div>
-        </div>
+   
+<main>
+  <h1 class="text-center mb-5 py-5 fw-bold">Categorías</h1>
 
-        <div class="col  d-flex">
-          <div class="card w-100">
-            <img
-              src="/img/productos/motorola1.png"
-              class="card-img-top product-image"
-              alt="Motorola G 017"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Motorola G17</h5>
-              <p class="card-text mb-3">
-                Memoria RAM: 4 GB, Pantalla LCD de 6.72", Batería de 5.2 Ah.
-              </p>
-              <p class="fs-3 fw-bold">Precio: $350.000</p>
-              <a href="/pages/productdetails.html" class="btn btn-primary"
-                >Ver producto</a
-              >
-            </div>
-          </div>
-        </div>
+ 
+  <section id="celulares">
+    <h2 class="titulo"> <i class="bi bi-phone"></i> Celulares</h2>
 
-        <div class="col  d-flex">
-          <div class="card w-100">
-            <img
-              src="/img/productos/iphone1.png"
-              class="card-img-top product-image"
-              alt="Iphone 15"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Iphone 15</h5>
-              <p class="card-text mb-3">
-                Memoria RAM:6 GB, cámara gran angular de 48 MP con teleobjetivo
-                de 2x, superpotente chip A16 Bionic.
-              </p>
-              <p class="fs-3 fw-bold">Precio: $1.350.000</p>
-              <a href="/pages/productdetails.html" class="btn btn-primary"
-                >Ver producto</a
-              >
-            </div>
+    <div class="text-center mb-4">
+      <img
+        src="/img/productos/cat-celu.png"
+        class="img-fluid rounded"
+        alt="Categoría de celulares"
+      />
+    </div>
+
+    <div class="row px-3 g-4">
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="card w-100">
+          <img
+            src="/img/productos/galaxy1.png"
+            class="card-img-top product-image"
+            alt="Galaxy 017"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Galaxy 017</h5>
+            <p class="card-text mb-3">
+              Memoria RAM: 4 GB, tiene 3 cámaras traseras de
+              50Mpx/5Mpx/2Mpx, memoria interna de 128GB.
+            </p>
+            <p class="fs-3 fw-bold">Precio: $520.000</p>
+            <a href="/pages/productdetails.html" class="btn btn-primary">
+              Ver producto
+            </a>
           </div>
         </div>
       </div>
 
-      <h3>Televisores</h3>
-      <div class="row px-3">
-        <div class="col">
-          <div class="card w-100">
-            <img
-              src="/img/productos/tvsangung1.png"
-              class="card-img-top product-image"
-              alt="Galaxy 017"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Stmart Samsung Neo</h5>
-              <p class="card-text mb-3">
-                56", Posee 4 puertos HDMI, esolución: 4K.
-              </p>
-              <p class="fs-3 fw-bold">Precio: $1.600.900</p>
-              <a href="/pages/productdetails.html" class="btn btn-primary"
-                >Ver producto</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card w-100">
-            <img
-              src="/img/productos/tvtcl1.png"
-              class="card-img-top product-image"
-              alt="Motorola G 017"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Smart Tcl HUD</h5>
-              <p class="card-text mb-3">
-                Pantalla LED de 55" con resolución 4K (3840 x 2160) para
-                imágenes nítidas, Función Espejo (Screen Mirroring) para
-                compartir contenido fácilmente..
-              </p>
-              <p class="fs-3 fw-bold">Precio: $900.000</p>
-              <a href="/pages/productdetails.html" class="btn btn-primary"
-                >Ver producto</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card w-100">
-            <img
-              src="/img/productos/tvkanji1.png"
-              class="card-img-top product-image"
-              alt="Iphone 15"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Smart Kanji</h5>
-              <p class="card-text mb-3">
-                Pantalla HD de 32” ideal para ver series, TV y videos con buena
-                claridad, Wi-Fi integrado para mirar contenido online sin
-                conectar cables de red.
-              </p>
-              <p class="fs-3 fw-bold">Precio: $265.500</p>
-              <a href="/pages/productdetails.html" class="btn btn-primary"
-                >Ver producto</a
-              >
-            </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="card w-100">
+          <img
+            src="/img/productos/motorola1.png"
+            class="card-img-top product-image"
+            alt="Motorola G17"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Motorola G17</h5>
+            <p class="card-text mb-3">
+              Memoria RAM: 4 GB, pantalla LCD de 6.72",
+              batería de 5.2 Ah.
+            </p>
+            <p class="fs-3 fw-bold">Precio: $350.000</p>
+            <a href="/pages/productdetails.html" class="btn btn-primary">
+              Ver producto
+            </a>
           </div>
         </div>
       </div>
 
-      <h3>Electrodomestico pequeños</h3>
-      <div class="row px-3">
-        <div class="col  d-flex">
-          <div class="card w-100">
-            <img
-              src="/img/productos/planchita1.png"
-              class="card-img-top product-image"
-              alt="Galaxy 017"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Planchita BabyLissPro</h5>
-              <p class="card-text mb-3">
-                Voltaje: 220V, posee placas de titanium, alcanza 215 °C de
-                temperatura máxima y 230 °C de temperatura mínima.
-              </p>
-              <p class="fs-3 fw-bold">Precio: $215.000</p>
-              <a href="/pages/productdetails.html" class="btn btn-primary"
-                >Ver producto</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col  d-flex">
-          <div class="card w-100">
-            <img
-              src="/img/productos/pava.png"
-              class="card-img-top product-image"
-              alt="Motorola G 017"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pava Suono</h5>
-              <p class="card-text mb-3">
-                Voltaje: 220V, potencia de 2200 W que permite alcanzar el punto
-                de ebullición del agua en tiempos reducidos para el uso diario.
-              </p>
-              <p class="fs-3 fw-bold">Precio: $65.500</p>
-              <a href="/pages/productdetails.html" class="btn btn-primary"
-                >Ver producto</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col  d-flex">
-          <div class="card w-100">
-            <img
-              src="/img/productos/afeitadora1.png"
-              class="card-img-top product-image"
-              alt="Iphone 15"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Afeitadora Daling</h5>
-              <p class="card-text mb-3">
-                Voltaje: 220V, incluye cabezales removibles para el pelo, barba
-                y contornos, recortando con precisión y facilidad.
-              </p>
-              <p class="fs-3 fw-bold">Precio: $22.800</p>
-              <a href="/pages/productdetails.html" class="btn btn-primary"
-                >Ver producto</a
-              >
-            </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="card w-100">
+          <img
+            src="/img/productos/iphone1.png"
+            class="card-img-top product-image"
+            alt="Iphone 15"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Iphone 15</h5>
+            <p class="card-text mb-3">
+              Memoria RAM: 6 GB, cámara gran angular de 48 MP
+              con teleobjetivo de 2x, chip A16 Bionic.
+            </p>
+            <p class="fs-3 fw-bold">Precio: $1.350.000</p>
+            <a href="/pages/productdetails.html" class="btn btn-primary">
+              Ver producto
+            </a>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </section>
+
+
+  <section id="televisores" >
+    <h2 class="titulo"> <i class="bi bi-tv"></i> Televisores</h2>
+
+    <div class="text-center mb-4">
+      <img
+        src="/img/productos/cat-tv.png"
+        class="img-fluid rounded"
+        alt="Categoría de televisores"
+      />
+    </div>
+
+    <div class="row px-3 g-4">
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="card w-100">
+          <img
+            src="/img/productos/tvsangung1.png"
+            class="card-img-top product-image"
+            alt="Smart Samsung Neo"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Smart Samsung Neo</h5>
+            <p class="card-text mb-3">
+              56", posee 4 puertos HDMI, resolución 4K.
+            </p>
+            <p class="fs-3 fw-bold">Precio: $1.600.900</p>
+            <a href="/pages/productdetails.html" class="btn btn-primary">
+              Ver producto
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="card w-100">
+          <img
+            src="/img/productos/tvtcl1.png"
+            class="card-img-top product-image"
+            alt="Smart TCL HUD"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Smart TCL HUD</h5>
+            <p class="card-text mb-3">
+              Pantalla LED de 55" con resolución 4K (3840 x 2160).
+              Función Screen Mirroring.
+            </p>
+            <p class="fs-3 fw-bold">Precio: $900.000</p>
+            <a href="/pages/productdetails.html" class="btn btn-primary">
+              Ver producto
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="card w-100">
+          <img
+            src="/img/productos/tvkanji1.png"
+            class="card-img-top product-image"
+            alt="Smart Kanji"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Smart Kanji</h5>
+            <p class="card-text mb-3">
+              Pantalla HD de 32", Wi-Fi integrado para mirar
+              contenido online.
+            </p>
+            <p class="fs-3 fw-bold">Precio: $265.500</p>
+            <a href="/pages/productdetails.html" class="btn btn-primary">
+              Ver producto
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+  </section>
+
+  
+  <section id="electrodomesticos" >
+    <h2 class="titulo"><i class="bi bi-plug"></i> Electrodomésticos pequeños</h2>
+
+    <div class="text-center mb-4">
+      <img
+        src="/img/productos/cat-electrope.png"
+        class="img-fluid rounded"
+        alt="Categoría de electrodomésticos pequeños"
+      />
+    </div>
+
+    <div class="row px-3 g-4">
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="card w-100">
+          <img
+            src="/img/productos/planchita1.png"
+            class="card-img-top product-image"
+            alt="Planchita BabyLissPro"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Planchita BabyLissPro</h5>
+            <p class="card-text mb-3">
+              Voltaje: 220V, posee placas de titanium,
+              alcanza 215 °C de temperatura máxima.
+            </p>
+            <p class="fs-3 fw-bold">Precio: $215.000</p>
+            <a href="/pages/productdetails.html" class="btn btn-primary">
+              Ver producto
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="card w-100">
+          <img
+            src="/img/productos/pava.png"
+            class="card-img-top product-image"
+            alt="Pava Suono"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pava Suono</h5>
+            <p class="card-text mb-3">
+              Voltaje: 220V, potencia de 2200 W que permite
+              alcanzar el punto de ebullición rápidamente.
+            </p>
+            <p class="fs-3 fw-bold">Precio: $65.500</p>
+            <a href="/pages/productdetails.html" class="btn btn-primary">
+              Ver producto
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+        <div class="card w-100">
+          <img
+            src="/img/productos/afeitadora1.png"
+            class="card-img-top product-image"
+            alt="Afeitadora Daling"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Afeitadora Daling</h5>
+            <p class="card-text mb-3">
+              Voltaje: 220V, incluye cabezales removibles para
+              pelo, barba y contornos.
+            </p>
+            <p class="fs-3 fw-bold">Precio: $22.800</p>
+            <a href="/pages/productdetails.html" class="btn btn-primary">
+              Ver producto
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  </section>
+</main>
+
 
     <footer class="bg-black">
       <div class="container my-4">
