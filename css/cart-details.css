@@ -1,0 +1,23 @@
+:root {
+  /* Escala de grises */
+  --gris-50: #f8f9fa;
+  --gris-100: #f1f3f5;
+  --gris-200: #e4e7eb;
+  --gris-300: #ced4da;
+  --gris-400: #adb5bd;
+  --gris-500: #868e96;
+  --gris-600: #6c757d;
+  --gris-700: #495057;
+  --gris-800: #343a40;
+  --gris-900: #212529;
+  --gris-950: #121416;
+}
+
+.cart-btn-delete {
+    background-color: var(--gris-300);
+}
+
+.cart-btn-delete:hover {
+    background-color: var(--gris-800);
+    color: aliceblue;
+}
