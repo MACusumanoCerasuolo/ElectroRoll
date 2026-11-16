@@ -21,3 +21,28 @@
     background-color: var(--gris-800);
     color: aliceblue;
 }
+
+.cart-price-fs-sm {
+    font-size: 1.5rem;
+}
+
+
+@media (width >= 768px) {
+    .cart-header-text-md {
+        font-size: 1.3rem;
+    }
+
+    .cart-body-text-md {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: var(--gris-300);
+    }
+
+    .cart-button-md {
+        font-size: 1rem;
+    }
+
+    .cart-price-fs-sm {
+    font-size: 1.8rem;
+}
+}

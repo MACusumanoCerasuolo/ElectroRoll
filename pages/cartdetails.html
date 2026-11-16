@@ -161,12 +161,19 @@
       <section class="py-5">
         <div class="container px-4">
           <h1 class="text-center mb-4 h3">Carrito de Compras</h1>
+          <div class="row d-none d-md-flex fw-bold g-4 cart-header-text-md border-bottom">
+            <div class="col-md-5">Producto</div>
+            <div class="col-md-2">Precio</div>
+            <div class="col-md-2">Cant.</div>
+            <div class="col-md-2">Subtotal</div>
+            <div class="col-md-1"></div>
+          </div>
           <!-- Productos -->
-          <div class="row">
+          <div class="row cart-body-text-md mb-4">
             <div class="col-12">
               <!-- producto 1 -->
               <div class="row g-2 border-bottom align-items-center py-3">
-                <div class="col-4">
+                <div class="col-4 col-md-2">
                   <div class="ratio ratio-1x1">
                     <img
                       src="../img/cart-details/samsung-mobile.jpg"
@@ -175,17 +182,19 @@
                     />
                   </div>
                 </div>
-                <div class="col-8">
-                  <p class="text-body-emphasis">Celular Samsung A16 6.7´´ 128GB NFC Gris</p>
+                <div class="col-8 col-md-3">
+                  <p class="text-body-emphasis">
+                    Celular Samsung A16 6.7´´ 128GB NFC Gris
+                  </p>
                 </div>
-                <div class="col-3 text-center text-body-emphasis">
-                  <span class="small d-block">Precio</span>
+                <div class="col-3 col-md-2 text-center text-body-emphasis">
+                  <span class="small d-block d-md-none">Precio</span>
                   $350000
                 </div>
-                <div class="col-5">
-                  <div class="input-group input-group-sm">
+                <div class="col-5 col-md-2">
+                  <div class="input-group input-group-sm flex-nowrap">
                     <button
-                      class="btn btn-outline-secondary"
+                      class="btn btn-outline-secondary px-md-2"
                       type="button"
                       aria-label="Disminuir cantidad"
                     >
@@ -195,10 +204,10 @@
                       type="text"
                       type="numeric"
                       value="1"
-                      class="form-control text-center text-body-emphasis"
+                      class="form-control text-center text-body-emphasis px-0"
                     />
                     <button
-                      class="btn btn-outline-secondary"
+                      class="btn btn-outline-secondary px-md-2"
                       type="button"
                       aria-label="Aumentar cantidad"
                     >
@@ -206,14 +215,14 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-4 text-center text-body-emphasis">
-                  <span class="small d-block"
-                    >Subtotal</span
-                  >
+                <div class="col-4 col-md-2 text-center text-body-emphasis">
+                  <span class="small d-block d-md-none">Subtotal</span>
                   $350000
                 </div>
-                <div class="col-12 text-center">
-                  <button class="btn btn-sm fs-5 d-inline-flex justify-content-center align-items-center gap-2 text-capitalize mt-2 cart-btn-delete">
+                <div class="col-12 col-md-1 text-center">
+                  <button
+                    class="btn btn-sm fs-5 d-inline-flex justify-content-center align-items-center gap-2 text-capitalize mt-2 cart-btn-delete"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -229,13 +238,15 @@
                         d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
                       />
                     </svg>
-                    Eliminar
+                    <span class="d-md-none">Eliminar</span>
                   </button>
                 </div>
               </div>
               <!-- producto 2 -->
-              <div class="row g-2 border-bottom align-items-center py-3 text-body-emphasis">
-                <div class="col-4">
+              <div
+                class="row g-2 border-bottom align-items-center py-3 text-body-emphasis"
+              >
+                <div class="col-4 col-md-2">
                   <div class="ratio ratio-1x1">
                     <img
                       src="../img/cart-details/electric-shaver-dalin.png"
@@ -244,20 +255,20 @@
                     />
                   </div>
                 </div>
-                <div class="col-8">
+                <div class="col-8 col-md-3">
                   <p>
                     Afeitadora Daling Di-9015 220v Batería recargable Carga
                     rápida
                   </p>
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-3 col-md-2 text-center">
                   <span class="small d-block">Precio</span>
                   $330000
                 </div>
-                <div class="col-5">
+                <div class="col-5 col-md-2">
                   <div class="input-group input-group-sm">
                     <button
-                      class="btn btn-outline-secondary"
+                      class="btn btn-outline-secondary px-md-2"
                       type="button"
                       aria-label="Disminuir cantidad"
                     >
@@ -267,10 +278,10 @@
                       type="text"
                       type="numeric"
                       value="2"
-                      class="form-control text-center"
+                      class="form-control text-center px-0"
                     />
                     <button
-                      class="btn btn-outline-secondary"
+                      class="btn btn-outline-secondary px-md-2"
                       type="button"
                       aria-label="Aumentar cantidad"
                     >
@@ -278,14 +289,14 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-4 text-center">
-                  <span class="small d-block"
-                    >Subtotal</span
-                  >
+                <div class="col-4 col-md-2 text-center">
+                  <span class="small d-block">Subtotal</span>
                   $66000
                 </div>
-                <div class="col-12 text-center">
-                  <button class="btn btn-sm fs-5 d-inline-flex justify-content-center align-items-center gap-2 text-capitalize mt-2 cart-btn-delete">
+                <div class="col-12 col-md-1 text-center">
+                  <button
+                    class="btn btn-sm fs-5 d-inline-flex justify-content-center align-items-center gap-2 text-capitalize mt-2 cart-btn-delete"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -301,13 +312,15 @@
                         d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
                       />
                     </svg>
-                    Eliminar
+                    <span class="d-md-none">Eliminar</span>
                   </button>
                 </div>
               </div>
               <!-- producto 3 -->
-              <div class="row g-2 border-bottom align-items-center py-3 text-body-emphasis">
-                <div class="col-4">
+              <div
+                class="row g-2 border-bottom align-items-center py-3 text-body-emphasis"
+              >
+                <div class="col-4 col-md-2">
                   <div class="ratio ratio-1x1">
                     <img
                       src="../img/cart-details/flat-iron-babyliss-pro.png"
@@ -316,17 +329,17 @@
                     />
                   </div>
                 </div>
-                <div class="col-8">
+                <div class="col-8 col-md-3">
                   <p>Planchita BabyLissPro 220v placas titanium 5 niveles</p>
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-3 col-md-2 text-center">
                   <span class="small d-block">Precio</span>
                   $208900
                 </div>
-                <div class="col-5">
+                <div class="col-5 col-md-2">
                   <div class="input-group input-group-sm">
                     <button
-                      class="btn btn-outline-secondary"
+                      class="btn btn-outline-secondary px-md-2"
                       type="button"
                       aria-label="Disminuir cantidad"
                     >
@@ -336,10 +349,10 @@
                       type="text"
                       type="numeric"
                       value="1"
-                      class="form-control text-center"
+                      class="form-control text-center px-0"
                     />
                     <button
-                      class="btn btn-outline-secondary"
+                      class="btn btn-outline-secondary px-md-2"
                       type="button"
                       aria-label="Aumentar cantidad"
                     >
@@ -347,14 +360,14 @@
                     </button>
                   </div>
                 </div>
-                <div class="col-4 text-center">
-                  <span class="small d-block"
-                    >Subtotal</span
-                  >
+                <div class="col-4 col-md-2 text-center">
+                  <span class="small d-block">Subtotal</span>
                   $208900
                 </div>
-                <div class="col-12 text-center">
-                  <button class="btn btn-sm fs-5 d-inline-flex justify-content-center align-items-center gap-2 text-capitalize mt-2 cart-btn-delete">
+                <div class="col-12 col-md-1 text-center">
+                  <button
+                    class="btn btn-sm fs-5 d-inline-flex justify-content-center align-items-center gap-2 text-capitalize mt-2 cart-btn-delete"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -370,23 +383,33 @@
                         d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
                       />
                     </svg>
-                    Eliminar
+                    <span class="d-md-none">Eliminar</span>
                   </button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Resumen de la compra -->
-          <div class="col-12">
+          <div class="col-12 col-lg-4">
             <div class="card shadow-sm border-0">
               <div class="card-body">
-                <div class="d-flex align-items-center justify-content-between mb-2">
-                  <span class="text-body-emphasis fs-4">Total a pagar</span>
-                  <span class="fw-bold fs-3">$624900</span>
+                <div
+                  class="d-flex align-items-center justify-content-between mb-2 mb-md-4"
+                >
+                  <span class="text-body-emphasis fs-2">Total a pagar</span>
+                  <span class="fw-bold cart-price-fs-sm">$624900</span>
                 </div>
-                <div class="d-grid gap-3 d-md-flex flex-md-row-reverse justify-contetn-md-between d-lg-grid">
-                  <a href="../pages/error404.html" class="btn btn-primary">Finalizar compra</a>
-                  <a href="../index.html" class="btn btn-outline-dark">Seguir comprando</a>
+                <div
+                  class="d-grid gap-3 d-md-flex flex-md-row-reverse d-lg-grid"
+                >
+                  <a
+                    href="../pages/error404.html"
+                    class="btn btn-primary flex-fill cart-button-md"
+                    >Finalizar compra</a
+                  >
+                  <a href="../index.html" class="btn btn-outline-dark flex-fill cart-button-md"
+                    >Seguir comprando</a
+                  >
                 </div>
               </div>
             </div>
