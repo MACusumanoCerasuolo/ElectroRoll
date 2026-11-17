@@ -16,8 +16,14 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/lux/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="/css/productdetails.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>ElectroRoll | Detalles del Producto</title>
   </head>
@@ -66,17 +72,26 @@
                 </a>
                 <ul class="dropdown-menu text-center">
                   <li>
-                    <a class="dropdown-item" href="/pages/error404.html">
+                    <a
+                      class="dropdown-item"
+                      href="/pages/categorydetails.html#celulares"
+                    >
                       Celulares
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/pages/error404.html">
+                    <a
+                      class="dropdown-item"
+                      href="/pages/categorydetails.html#televisores"
+                    >
                       Televisores
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/pages/error404.html">
+                    <a
+                      class="dropdown-item"
+                      href="/pages/categorydetails.html#electrodomestico"
+                    >
                       pequeños electrodomésticos
                     </a>
                   </li>
@@ -157,145 +172,353 @@
     </header>
 
     <main>
-      <div class="card" style="width: 18rem">
-        <img src="/img/productos/galaxy1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Galaxy 017</h5>
-          <p class="card-text">
-            Dispositivo desbloqueado para que elijas tu compañía telefónica
-            preferida. Pantalla Super AMOLED de 6.7 pulgadas. Cámara trasera de
-            50 Mpx. Cámaras frontales de 13Mpx. Batería de 5 Ah. Memoria interna
-            de 128 GB. Resistente al agua. Con sensor de huellas dactilares.
-            Resistente al polvo.
-          </p>
-          <p class="fs-3 fw-bold">Precio: $350.000</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="container mt-5">
+        <div class="card mb-4 mx-auto w-75" id="galaxy017">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="/img/productos/galaxy1.png"
+                class="img-fluid rounded-start"
+                alt="Samsung Galaxy 017"
+              />
+            </div>
+
+            <div class="col-md-8 px-5">
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-1">Galaxy 017</h5>
+
+                <ul class="card-text fs-4">
+                  <h4>Caracteristicas</h4>
+                  <li>
+                    Dispositivo desbloqueado para que elijas tu compañía
+                    telefónica preferida.
+                  </li>
+                  <li>Pantalla Super AMOLED de 6.7 pulgadas.</li>
+                  <li>Cámara trasera de 50 Mpx.</li>
+                  <li>Cámara frontal de 13 Mpx.</li>
+                  <li>Batería de 5 Ah y memoria interna de 128 GB.</li>
+                  <li>Resistente al agua y al polvo.</li>
+                  <li>Con sensor de huellas dactilares.</li>
+                </ul>
+
+                <p
+                  class="fs-3 fw-bold bg-primary text-white p-2 d-inline-block rounded"
+                >
+                  Precio: $350.000
+                </p>
+
+                <div
+                  class="d-inline-block bg-dark-subtle text-black rounded-3 p-3 mb-3"
+                >
+                  <p class="fw-bold fs-5 mb-1">
+                    <i class="bi bi-credit-card"></i>
+                    ¡12 cuotas sin interés!
+                  </p>
+                  <p class="fs-4 fw-bold mb-0">$29.166,67</p>
+                  <small>por mes</small>
+                </div>
+
+                <div>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="container mt-5 mb-5">
+            <h3 class="fw-bold mb-4">Opiniones de nuestros clientes</h3>
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold">María González</h5>
+                <p class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </p>
+                <p class="card-text fs-4">
+                  Excelente celular, tiene muy buena calidad de imagen y
+                  funciona perfectamente. Estoy muy conforme con la compra.
+                </p>
+                <small class="text-muted fs-4">Publicado el 10/11/2026</small>
+              </div>
+            </div>
+
+            <div class="card mb-3 f">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold">Lucas Fernández</h5>
+                <p class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </p>
+                <p class="card-text fs-4">
+                  Muy buen rendimiento y excelente cámara. La batería dura
+                  bastante. Lo recomiendo.
+                </p>
+                <small class="text-muted fs-4">Publicado el 08/11/2026</small>
+              </div>
+            </div>
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-4">Sofía Ramírez</h5>
+                <p class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </p>
+                <p class="card-text fs-4">
+                  Me encantó el diseño y la pantalla. Llegó en excelentes
+                  condiciones.
+                </p>
+                <small class="text-muted fs-4">Publicado el 05/11/2026</small>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="/img/productos/motorola1.png"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Motorola G17</h5>
-          <p class="card-text">
-            Memoria RAM: 4 GB Dispositivo liberado para que elijas la compañía
-            telefónica que prefieras. Pantalla LCD de 6.72". Cámaras delanteras
-            de 50MP. Batería de 5.2 Ah. Memoria interna de 128GB. Resistente al
-            agua. Con reconocimiento facial y sensor de huella dactilar.
-            Resistente al polvo.
-          </p>
-          <p class="fs-3 fw-bold">Precio: $350.000</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+      <div class="container mt-5">
+        <div class="card mb-4 mx-auto w-75" id="galaxy017">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="/img/productos/motorola1.png"
+                class="img-fluid rounded-start"
+                alt="Samsung Galaxy 017"
+              />
+            </div>
+
+            <div class="col-md-8 px-5">
+              <div class="card-body">
+                <h4>Caracteristicas</h4>
+                <h5 class="card-title fw-bold fs-1">Motortola g17</h5>
+
+                <ul class="card-text fs-4">
+                  <li>Memoria RAM: 4 GB</li>
+                  <li>Batería de 5.2 Ah</li>
+                  <li>
+                    Dispositivo liberado para que elijas la compañía telefónica
+                    que prefieras.
+                  </li>
+                  <li>Pantalla LCD de 6.72".</li>
+                  <li>Cámaras delanteras de 50MP..</li>
+                  <li>Memoria interna de 128GB.</li>
+                  <li>
+                    Con reconocimiento facial y sensor de huella dactilar.
+                  </li>
+                  <li>Resistente al agua y al polvo.</li>
+                </ul>
+
+                <p
+                  class="fs-3 fw-bold bg-primary text-white p-2 d-inline-block rounded"
+                >
+                  Precio: $445.999
+                </p>
+
+                <div
+                  class="d-inline-block bg-dark-subtle text-black rounded-3 p-3 mb-3"
+                >
+                  <p class="fw-bold fs-5 mb-1">
+                    <i class="bi bi-credit-card"></i>
+                    ¡6 cuotas sin interés!
+                  </p>
+                  <p class="fs-4 fw-bold mb-0">$36.100</p>
+                  <small>por mes</small>
+                </div>
+
+                <div>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="container mt-5 mb-5">
+            <h3 class="fw-bold mb-4">Opiniones de nuestros clientes</h3>
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold">Martin Diaz</h5>
+                <p class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </p>
+                <p class="card-text fs-4">
+                  Precia y calidad muy bien.
+                </p>
+                <small class="text-muted fs-4">Publicado el 06/01/2026</small>
+              </div>
+            </div>
+
+            <div class="card mb-3 f">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold">Pablo Lopez</h5>
+                <p class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </p>
+                <p class="card-text fs-4">
+                  muy liviano y como al usar.
+                </p>
+                <small class="text-muted fs-4">Publicado el 25/04/2026</small>
+              </div>
+            </div>
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-4">Carla Soria</h5>
+                <p class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </p>
+                <p class="card-text fs-4">
+                  la bateria me duara todo el dia sin importar cuanto lo uso.
+                </p>
+                <small class="text-muted fs-4">Publicado el 05/11/2026</small>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
-        <img src="/img/productos/galaxy1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Galaxy 017</h5>
-          <p class="card-text">
-            Dispositivo desbloqueado para que elijas tu compañía telefónica
-            preferida. Pantalla Super AMOLED de 6.7 pulgadas. Cámara trasera de
-            50 Mpx. Cámaras frontales de 13Mpx. Batería de 5 Ah. Memoria interna
-            de 128 GB. Resistente al agua. Con sensor de huellas dactilares.
-            Resistente al polvo.
-          </p>
-          <p class="fs-3 fw-bold">Precio: $350.000</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+      <div class="container mt-5">
+        <div class="card mb-4 mx-auto w-75" id="galaxy017">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="/img/productos/iphone1.png"
+                class="img-fluid rounded-start"
+                alt="Samsung Galaxy 017"
+              />
+            </div>
+
+            <div class="col-md-8 px-5">
+              <div class="card-body">
+                <h4>Caracteristicas</h4>
+                <h5 class="card-title fw-bold fs-1">Iphone 15</h5>
+
+                <ul class="card-text fs-4">
+                  <li>Memoria interna: 128 GB.</li>
+                  <li>
+                    La Dynamic Island te muestra alertas y actividades en vivo.
+                  </li>
+                  <li>Cámara gran angular de 48 MP con teleobjetivo de 2x.</li>
+                  <li></li>
+                  <li>Cámaras delanteras de 50MP..</li>
+                  <li>Diseño innovador con pantalla Super Retina XDR.</li>
+                  <li>
+                    Retratos de última generación. Superpotente chip A16 Bionic.
+                  </li>
+                  <li>
+                    Con tecnologías de privacidad que te ayudan a mantener el
+                    control de tus datos.
+                  </li>
+                  <li>
+                    Conexión USB-C. Funcionalidad esencial de seguridad con
+                    detección de choques para pedir ayuda.
+                  </li>
+                </ul>
+
+                <p
+                  class="fs-3 fw-bold bg-primary text-white p-2 d-inline-block rounded"
+                >
+                  Precio: $1.844.999
+                </p>
+
+                <div
+                  class="d-inline-block bg-dark-subtle text-black rounded-3 p-3 mb-3"
+                >
+                  <p class="fw-bold fs-5 mb-1">
+                    <i class="bi bi-credit-card"></i>
+                    ¡6 cuotas sin interés!
+                  </p>
+                  <p class="fs-4 fw-bold mb-0">$308.333</p>
+                  <small>por mes</small>
+                </div>
+
+                <div>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="container mt-5 mb-5">
+            <h3 class="fw-bold mb-4">Opiniones de nuestros clientes</h3>
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold">Matias Castro</h5>
+                <p class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </p>
+                <p class="card-text fs-4">
+                  Muy buen telefono, valio la pena pagarlo.
+                </p>
+                <small class="text-muted fs-4">Publicado el 10/11/2026</small>
+              </div>
+            </div>
+
+            <div class="card mb-3 f">
+              <div class="card-body">
+                <h5 class="card-title fs-4 fw-bold"> Fernándo Lozano</h5>
+                <p class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </p>
+                <p class="card-text fs-4">
+                 La bateria da mucho que desear.
+                </p>
+                <small class="text-muted fs-4">Publicado el 08/11/2026</small>
+              </div>
+            </div>
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title fw-bold fs-4">Liliana Suarez</h5>
+                <p class="text-warning mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </p>
+                <p class="card-text fs-4">
+                  Su camara el excelete, la brinda las mejores fotos.
+                </p>
+                <small class="text-muted fs-4">Publicado el 05/11/2026</small>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-      <div class="card" style="width: 18rem">
-        <img src="/img/productos/galaxy1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Galaxy 017</h5>
-          <p class="card-text">
-            Dispositivo desbloqueado para que elijas tu compañía telefónica
-            preferida. Pantalla Super AMOLED de 6.7 pulgadas. Cámara trasera de
-            50 Mpx. Cámaras frontales de 13Mpx. Batería de 5 Ah. Memoria interna
-            de 128 GB. Resistente al agua. Con sensor de huellas dactilares.
-            Resistente al polvo.
-          </p>
-          <p class="fs-3 fw-bold">Precio: $350.000</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="/img/productos/galaxy1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Galaxy 017</h5>
-          <p class="card-text">
-            Dispositivo desbloqueado para que elijas tu compañía telefónica
-            preferida. Pantalla Super AMOLED de 6.7 pulgadas. Cámara trasera de
-            50 Mpx. Cámaras frontales de 13Mpx. Batería de 5 Ah. Memoria interna
-            de 128 GB. Resistente al agua. Con sensor de huellas dactilares.
-            Resistente al polvo.
-          </p>
-          <p class="fs-3 fw-bold">Precio: $350.000</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="/img/productos/galaxy1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Galaxy 017</h5>
-          <p class="card-text">
-            Dispositivo desbloqueado para que elijas tu compañía telefónica
-            preferida. Pantalla Super AMOLED de 6.7 pulgadas. Cámara trasera de
-            50 Mpx. Cámaras frontales de 13Mpx. Batería de 5 Ah. Memoria interna
-            de 128 GB. Resistente al agua. Con sensor de huellas dactilares.
-            Resistente al polvo.
-          </p>
-          <p class="fs-3 fw-bold">Precio: $350.000</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="/img/productos/galaxy1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Galaxy 017</h5>
-          <p class="card-text">
-            Dispositivo desbloqueado para que elijas tu compañía telefónica
-            preferida. Pantalla Super AMOLED de 6.7 pulgadas. Cámara trasera de
-            50 Mpx. Cámaras frontales de 13Mpx. Batería de 5 Ah. Memoria interna
-            de 128 GB. Resistente al agua. Con sensor de huellas dactilares.
-            Resistente al polvo.
-          </p>
-          <p class="fs-3 fw-bold">Precio: $350.000</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="/img/productos/galaxy1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Galaxy 017</h5>
-          <p class="card-text">
-            Dispositivo desbloqueado para que elijas tu compañía telefónica
-            preferida. Pantalla Super AMOLED de 6.7 pulgadas. Cámara trasera de
-            50 Mpx. Cámaras frontales de 13Mpx. Batería de 5 Ah. Memoria interna
-            de 128 GB. Resistente al agua. Con sensor de huellas dactilares.
-            Resistente al polvo.
-          </p>
-          <p class="fs-3 fw-bold">Precio: $350.000</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="/img/productos/galaxy1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Galaxy 017</h5>
-          <p class="card-text">
-            Dispositivo desbloqueado para que elijas tu compañía telefónica
-            preferida. Pantalla Super AMOLED de 6.7 pulgadas. Cámara trasera de
-            50 Mpx. Cámaras frontales de 13Mpx. Batería de 5 Ah. Memoria interna
-            de 128 GB. Resistente al agua. Con sensor de huellas dactilares.
-            Resistente al polvo.
-          </p>
-          <p class="fs-3 fw-bold">Precio: $350.000</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+
+
+
     </main>
 
     <footer class="bg-black">
